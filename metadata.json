@@ -1,0 +1,6 @@
+{
+  "name": "CampusAI",
+  "description": "Modern, comprehensive digital student campus platform for timetable, assignments, exams, study planner, notices, resources, and progress tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
