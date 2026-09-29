@@ -10,6 +10,8 @@ import { Sidebar } from './components/Sidebar';
 import { GlobalSearchModal } from './components/GlobalSearchModal';
 import { LoginModal } from './components/LoginModal';
 
+import { CampusAiChatWidget } from './components/CampusAiChatWidget';
+
 // Views
 import { DashboardView } from './views/DashboardView';
 import { TimetableView } from './views/TimetableView';
@@ -95,6 +97,9 @@ const MainContent: React.FC = () => {
 
       {/* Global Spotlight Search Modal (⌘K) */}
       <GlobalSearchModal />
+
+      {/* Floating Live n8n Campus AI Chat Widget */}
+      <CampusAiChatWidget />
 
       {/* Login / Profile Switcher Modal (shown if logged out or requested) */}
       <LoginModal

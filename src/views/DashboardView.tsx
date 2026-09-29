@@ -386,7 +386,7 @@ export const DashboardView: React.FC = () => {
 
         {/* Right Column: Notices & Smart Assistant Section Preview */}
         <div className="space-y-6">
-          {/* Smart AI Assistant Section (Future-Ready Agentic preview as requested) */}
+          {/* Smart AI Assistant Section (Connected to live n8n Agent) */}
           <div className="p-5 rounded-2xl bg-gradient-to-b from-indigo-50/70 to-slate-50 dark:from-indigo-950/30 dark:to-slate-900 border border-indigo-200/80 dark:border-indigo-900/60 shadow-xs relative overflow-hidden">
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-2">
@@ -397,18 +397,19 @@ export const DashboardView: React.FC = () => {
                   <h3 className="text-xs font-bold text-slate-900 dark:text-slate-100">
                     Smart AI Assistant
                   </h3>
-                  <span className="text-[10px] text-indigo-600 dark:text-indigo-400 font-semibold">
-                    Agentic Reasoning Engine
+                  <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                    n8n Agent Live
                   </span>
                 </div>
               </div>
-              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-900/80 text-indigo-700 dark:text-indigo-300">
-                Ready
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 font-bold border border-emerald-300 dark:border-emerald-800">
+                Connected
               </span>
             </div>
 
             <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
-              CampusAI is architected to reason across your timetable, pending deadlines, and examination rules to construct prioritized schedules.
+              Directly connected to your live n8n autonomous agent to answer queries on coursework, exam readiness, and deadlines.
             </p>
 
             {/* Quick action query shortcuts */}
@@ -417,23 +418,23 @@ export const DashboardView: React.FC = () => {
                 onClick={() => setActiveTab('assistant')}
                 className="w-full text-left p-2 rounded-lg bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 hover:border-indigo-400 transition text-[11px] text-slate-700 dark:text-slate-300 flex items-center justify-between cursor-pointer"
               >
-                <span>"Prioritize this week's 3 assignments by weightage"</span>
+                <span>"What are my imminent deadlines this week?"</span>
                 <ArrowRight className="w-3 h-3 text-slate-400" />
               </button>
               <button
                 onClick={() => setActiveTab('assistant')}
                 className="w-full text-left p-2 rounded-lg bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 hover:border-indigo-400 transition text-[11px] text-slate-700 dark:text-slate-300 flex items-center justify-between cursor-pointer"
               >
-                <span>"Check safe absence margin for Distributed Systems"</span>
+                <span>"Analyze my attendance safety margins"</span>
                 <ArrowRight className="w-3 h-3 text-slate-400" />
               </button>
             </div>
 
             <button
               onClick={() => setActiveTab('assistant')}
-              className="w-full py-2 px-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer"
+              className="w-full py-2 px-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold flex items-center justify-center gap-1.5 transition cursor-pointer shadow-xs"
             >
-              <span>Open Smart Assistant Hub</span>
+              <span>Chat with Campus AI Agent</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
